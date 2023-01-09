@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador de Texto</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor-header">
+      <img src="./public/assets/logo-javascript.svg" alt="logo-javascript">
+      <div class="menu">
+        <div class="menu-inicio">
+          <a class="selected"  href="#">Inicio</a>
+        </div>
+        <div class="menu-información">
+          <a href="./src/pages/more-info.html">Más Información</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="grid-layout">
+
+    <div class="c1">
+      <img id="logo-alura" src="./public/assets/Logo.png" alt="logo-alura">
+    </div>
+
+    <div class="c2">
+      <textarea id="first-input" placeholder="ingrese el texto aquí"></textarea>
+    </div>
+
+    <div class="c3">
+      <img src="./public/assets/alert.svg" alt="logo-alert">
+      &nbsp; &nbsp;
+      <span>Sólo letras minúsculas y sin acentos</span>
+    </div>
+
+    <div class="c4">
+      <button id="encrypt-button">Encriptar Texto</button>
+    </div>
+
+    <div class="c5">
+      <button id="decrypt-button">Desencriptar Texto</button>
+    </div>
+
+    <div class="c6">
+      <div class="caja-texto">
+        <img src="./public/assets/Muñeco.png" alt="imagen-busqueda">
+        <h4>Ningún mensaje fue encontrado</h4>
+        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+      </div>
+      <textarea id="second-input" class="hidden"></textarea>
+      <button id="copy-text-button" class="hidden">Copiar Texto</button>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="./src/js/index.js"></script>
+
+</html>

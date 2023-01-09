@@ -1,0 +1,311 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #E9ECF8;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::placeholder {
+  color: #0A3871;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #757fb2;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 42px;
+}
+
+.contenedor-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-left: 30px;
+  margin-top: 3px;
+  width: 35px;
+}
+
+.menu {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.menu-inicio {
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-información {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  border: 2px solid;
+  border-color: #EBC211;
+  color: #EBC211;
+  border-radius: 12px;
+}
+
+.selected {
+  color: #EBC211 !important;
+}
+
+.grid-layout {
+  display: grid;
+  padding: 20px;
+  margin-top: 35px;
+  gap: 0.5rem;
+  height: calc(100vh - 80px);
+  grid-template-columns: 100%;
+  grid-template-rows: 5% 33% 2% 8% 8% 38%;
+}
+
+.c1 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#logo-alura {
+  height: 80%;
+}
+
+.c3 {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: gray;
+  font-size: 12px;
+}
+
+.c4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c6 {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.c6 img {
+  display: none;
+  width: 80%;
+}
+
+.caja-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #495057;
+  height: 80px;
+  width: 80%;
+}
+
+button {
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #072B61;
+  color: #343A40;
+  background-color: #AAB2D5;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  transition: .5s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-5%);
+  background-color: #0A3871 !important;
+  color: white !important;
+}
+
+#encrypt-button {
+  background-color: #757FB2;
+  color: white;
+}
+
+#decrypt-button {
+  background-color: #E9ECF8;
+  color: #072B61;
+}
+
+#copy-text-button {
+  width: 90%;
+  height: 20%;
+  font-size: 16px;
+  background-color: white;
+  color: #072B61;
+}
+
+textarea {
+  border: none;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  resize: none;
+  outline: none;
+}
+
+#first-input {
+  width: 100%;
+  height: 100%;
+  background-color: #E9ECF8;
+  font-size: 24px;
+  line-height: 24px;
+  color: #0A3871;
+}
+
+#second-input {
+  width: 95%;
+  height: 75%;
+  font-size: 20px;
+  color: #343A40;
+}
+
+.hidden{
+  display: none;
+}
+
+.executed:hover {
+  background-color: #ADF34D !important;
+  color: black !important;
+}
+
+@media screen and (min-width: 58em) {
+
+  .grid-layout {
+    grid-template-columns: 5% 25% 25% 40%;
+    grid-template-rows: 10% 63% 5% 10% 2%;
+    gap: 1rem;
+  }
+
+  .c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/1/2/2;
+  }
+
+  #logo-alura {
+    height: 50%;
+  }
+
+  .c2 {
+    grid-area: 2/2/3/4;
+  }
+
+  .c3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+    grid-area: 3/2/4/3;
+  }
+
+  .c4 {
+    grid-area: 4/2/5/3;
+  }
+
+  .c5 {
+    grid-area: 4/3/5/4;
+  }
+
+  .c6 {
+    grid-area: 1/4/6/5;
+  }
+
+  .c6 img {
+    display: flex;
+    width: 80%;
+  }
+
+  #copy-text-button {
+    width: 60%;
+    height: 8%;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: white;
+    color: #072B61;
+  }
+
+  #second-input {
+    width: 90%;
+    height: 75%;
+    font-size: 20px;
+    color: #343A40;
+  }
+
+}
+
+.more-info{
+  margin-top: 60px;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #343A40;
+}
+
+#texto-more-info {
+
+}
