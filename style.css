@@ -219,7 +219,7 @@ textarea {
   color: #343A40;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -295,7 +295,7 @@ textarea {
 
 }
 
-.more-info{
+.more-info {
   margin-top: 60px;
   height: calc(100vh - 80px);
   display: flex;
@@ -306,6 +306,17 @@ textarea {
   color: #343A40;
 }
 
-#texto-more-info {
+.redes-sociales a {
+  text-decoration: none;
+}
 
+#linkedin img {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 70px;
+}
+
+#github img {
+  margin-top: 20px;
+  width: 70px;
 }
